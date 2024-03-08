@@ -1,0 +1,25 @@
+meta {
+  name: GET Habilidad
+  type: http
+  seq: 2
+}
+
+get {
+  url: http://{{Server}}/{{APIPath}}/mandril/{{mandrilId}}/habilidad/{{habilidadId}}
+  body: none
+  auth: none
+}
+
+auth:basic {
+  username: 
+  password: 
+}
+
+auth:bearer {
+  token: 
+}
+
+vars:pre-request {
+  mandrilId: 3
+  habilidadId: 3
+}

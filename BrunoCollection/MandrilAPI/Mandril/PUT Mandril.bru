@@ -1,0 +1,31 @@
+meta {
+  name: PUT Mandril
+  type: http
+  seq: 4
+}
+
+put {
+  url: http://{{Server}}/{{APIPath}}/mandril/{{mandrilId}}
+  body: json
+  auth: none
+}
+
+auth:basic {
+  username: 
+  password: 
+}
+
+auth:bearer {
+  token: 
+}
+
+body:json {
+  {
+    "Nombre": "Mandriloso",
+    "Apellido": "Casan"
+  }
+}
+
+vars:pre-request {
+  mandrilId: 4
+}

@@ -1,0 +1,27 @@
+meta {
+  name: POST Mandril
+  type: http
+  seq: 3
+}
+
+post {
+  url: http://{{Server}}/{{APIPath}}/mandril
+  body: json
+  auth: none
+}
+
+auth:basic {
+  username: 
+  password: 
+}
+
+auth:bearer {
+  token: 
+}
+
+body:json {
+  {
+    "nombre": "Nuevo Mandril",
+    "apellido": "Jaime"
+  }
+}

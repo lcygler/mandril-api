@@ -1,0 +1,25 @@
+meta {
+  name: DELETE Habilidad
+  type: http
+  seq: 5
+}
+
+delete {
+  url: http://{{Server}}/{{APIPath}}/mandril/{{mandrilId}}/habilidad/{{habilidadId}}
+  body: none
+  auth: none
+}
+
+auth:basic {
+  username: 
+  password: 
+}
+
+auth:bearer {
+  token: 
+}
+
+vars:pre-request {
+  mandrilId: 1
+  habilidadId: 1
+}

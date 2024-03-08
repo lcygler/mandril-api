@@ -1,0 +1,20 @@
+meta {
+  name: GET Mandriles
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://{{Server}}/{{APIPath}}/mandril
+  body: none
+  auth: none
+}
+
+auth:basic {
+  username: 
+  password: 
+}
+
+auth:bearer {
+  token: 
+}
